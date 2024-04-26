@@ -136,3 +136,29 @@
     text-align: center;
     
 }
+
+.container {
+    max-width: 100%;
+}
+
+.img-large {
+    width: 100%;
+    height: auto;
+}
+.col-ab {
+    padding: 20px;
+}
+
+.col-ab h4, .col-ab p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .img-large {
+        width: 80%;
+    }
+}
+
+
+
