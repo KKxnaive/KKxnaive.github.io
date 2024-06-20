@@ -1,0 +1,479 @@
+body {
+  font-family: Arial, sans-serif;
+  cursor: url('assets/cursor.png') auto; /* 自定义光标 */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.main-header {
+  background-color: #000000;
+  height: 100vh;
+  color: #82baf6; /* 修改颜色值 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn {
+  color: aliceblue;
+  background-color: #4a67d0;
+  margin-top: 5rem; /* 调整顶部间距 */
+}
+
+.latest-updates .card {
+  margin-bottom: 20px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #f8f9fa; /* 添加背景颜色 */
+}
+
+.chapter-content,
+.articles-content,
+.resources-content,
+.contact-content {
+  padding: 2rem 0;
+}
+
+.chapter-text,
+.articles-list,
+.resources-list,
+.contact-content form {
+  margin-top: 1.5rem;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.about-content {
+  padding: 150px 0;
+  background: #000000;
+  color: #ffffff;
+  text-align: center; /* 居中对齐文本 */
+  position: relative; /* 用于星星动画的相对定位 */
+  overflow: hidden; /* 隐藏溢出的星星 */
+}
+
+.about-content img {
+  display: block;
+  margin: auto; /* 居中对齐图片 */
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: star-fall linear infinite;
+}
+
+.star::before {
+  content: "★";
+  font-size: 12px;
+  color: #f0f0f0;
+  position: absolute;
+  top: -6px;
+  left: -6px;
+}
+
+@keyframes star-fall {
+  0% {
+    transform: translateY(-100vh) rotateZ(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotateZ(720deg);
+    opacity: 0;
+  }
+}
+
+.text-content {
+  text-align: center;
+  margin-top: 50px; /* 调整顶部间距 */
+  height: 100vh;
+  padding: 0;
+  background-color: #c7d6e5; /* 设置背景色 */
+  border-radius: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.chapter-content {
+  padding-top: 100px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.chapter-text {
+  margin-top: 50px;
+}
+
+.chapter-text p {
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.chapter-text img {
+  margin-top: 50px;
+  max-width: 100%;
+  height: auto;
+}
+
+.footer {
+  position: fixed;
+  bottom: 1;
+  width: 100%;
+  background-color: #4b6278;
+  text-align: center;
+}
+
+/* Media Query for Navbar on Small Screens */
+@media (max-width: 768px) {
+  .navbar-nav {
+      flex-direction: column;
+  }
+
+  .navbar-nav .nav-item {
+      text-align: center;
+      margin: auto;
+  }
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.chapter-content {
+  padding-top: 100px;
+  background-color: #ffffff;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.chapter-text {
+  margin-top: 30px;
+}
+
+.chapter-text p {
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #333333; /* 文字颜色 */
+  transition: color 0.3s ease; /* 添加动画效果 */
+}
+
+.chapter-text img {
+  margin-top: 30px;
+  max-width: 100%;
+  height: auto;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+.btnn {
+  color: aliceblue;
+  background-color: #d04a51;
+  margin-top: 5rem; /* 调整顶部间距 */
+}
+/* Custom CSS for Portfolio Page */
+
+.portfolio {
+  background-color: #f0f0f0;
+  padding: 50px 0;
+}
+
+.portfolio .card {
+  transition: transform 0.5s ease;
+  border-radius: 15px; /* 圆角边框 */
+  overflow: hidden; /* 确保圆角边框 */
+}
+
+.portfolio .card:hover {
+  transform: translateY(-10px);
+}
+
+.portfolio .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.portfolio .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.portfolio .card-text {
+  color: #555555;
+}
+
+.portfolio .btn-primary {
+  background-color: #9ec3e9;
+  border-color: #f1f2f4;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+}
+
+.portfolio .btn-primary:hover {
+  background-color: #486d91;
+  border-color: #0e3e70;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+  .portfolio .card-img-top {
+      height: 150px;
+  }
+}
+/* Custom CSS for Resources Page */
+
+/* Main Content Styling */
+.resources-content {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.resources-content .container {
+  max-width: 960px;
+}
+
+.resources-content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Card Styling */
+.card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  color: #666;
+}
+
+.btn-primary {
+  background-color: #4a90e2;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #357bd8;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #f8f9fa;
+  color: #666;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 60px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+/* Custom CSS for Resources Page */
+
+/* Main Content Styling */
+.resources-content {
+  background-color: #f8f9fa; /* 设置资源页面的背景颜色 */
+  padding: 60px 0;
+}
+
+.resources-content .container {
+  max-width: 960px;
+}
+
+.resources-content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+  text-align: center; /* 文字居中 */
+}
+
+/* Card Styling */
+.resources-content .card {
+  border: none;
+  border-radius: 8px; /* 圆角边框 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff; /* 卡片背景色 */
+  overflow: hidden;
+}
+
+.resources-content .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.resources-content .card-img-top {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.resources-content .card:hover .card-img-top {
+  transform: scale(1.1); /* 鼠标悬停时放大图片 */
+}
+
+.resources-content .card-body {
+  padding: 20px;
+}
+
+.resources-content .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.resources-content .card-text {
+  color: #666;
+}
+
+.resources-content .btn-primary {
+  background-color: #007bff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.resources-content .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #f8f9fa; /* 保留页面底部背景颜色 */
+  color: #666;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 60px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+  .animate-element {
+    animation: exampleAnimation 1s ease-out;
+  }
+  .navbar-nav {
+    flex-direction: column;
+  }
+  .navbar-nav .nav-item {
+    text-align: center;
+    margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+  .navbar-nav .nav-item {
+    text-align: center;
+    margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  .resources-content .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+}
+.footer {
+  background-color: #f8f9fa;
+  color: #666;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
