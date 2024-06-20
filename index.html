@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>夢境地圖</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">夢的探討</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">關於夢</a></li>
+                <li class="nav-item"><a class="nav-link" href="chapter1.html">章節</a></li>
+                <li class="nav-item"><a class="nav-link" href="chapter2.html">專題</a></li>
+                <li class="nav-item"><a class="nav-link" href="resources.html">夢的相關</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">夢的創作</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <header class="main-header">
+        <div class="container text-center">
+            <h1 class="display-4">探索夢的世界</h1>
+            <p class="lead">了解夢的本質、力量與傳說</p>
+            <a class="btn btn-white btn-lg " href="chapter1.html" role="button">進入夢境</a>
+        </div>
+    </header>
+
+    <section class="latest-updates py-5">
+        <div class="container">
+            <h2 class="text-center">踏入夢境域</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="ak-02.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">直夢</h5>
+                            <p class="card-text">即夢見什麼就發生什麼。</p>
+                            <a href="#" class="btn btn-white ">Dreamimg...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="ak-03.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">象夢</h5>
+                            <p class="card-text">夢意在夢境內容中通過象徵手段表現出來。</p>
+                            <a href="#" class="btn btn-white">Dreamimg...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="ak_ 1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">人夢</h5>
+                            <p class="card-text">同樣的夢境對於不同的人有不同的意義。</p>
+                            <a href="#" class="btn btn-white">Dreamimg...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-light text-center text-lg-start py-4">
+        <div class="container">
+            <p class="text-muted">© 夢的探討 ©</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    
+
+
+
+    <script>
+        // Ensure footer stays at the bottom
+        function adjustFooterPosition() {
+            const footer = document.querySelector('.footer');
+            const bodyHeight = document.body.clientHeight;
+            const windowHeight = window.innerHeight;
+            if (bodyHeight < windowHeight) {
+                footer.style.position = 'fixed';
+                footer.style.bottom = '0';
+                footer.style.width = '100%';
+            } else {
+                footer.style.position = 'static';
+            }
+        }
+
+        window.addEventListener('load', adjustFooterPosition);
+        window.addEventListener('resize', adjustFooterPosition);
+    </script>
+</body>
+
+</html>

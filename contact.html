@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>夢的創作</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Custom Cursor CSS -->
+    <style>
+        body {
+            cursor: url('assets/cursor.png'), auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">夢的探討</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">關於夢</a></li>
+                <li class="nav-item"><a class="nav-link" href="chapter1.html">章節</a></li>
+                <li class="nav-item"><a class="nav-link" href="chapter2.html">專題</a></li>
+                <li class="nav-item active"><a class="nav-link" href="resources.html">夢的相關</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">夢的創作</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="contact-content py-5">
+        <div class="container">
+            <h2 class="text-center">關於夢</h2>
+            <p class="text-center">有關夢的一切...</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">暱稱</label>
+                    <input type="text" class="form-control" id="name" placeholder="您的暱稱" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">郵箱</label>
+                    <input type="email" class="form-control" id="email" placeholder="您的郵箱" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">投稿</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="您的投稿" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">發送</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-light text-center text-lg-start py-4">
+        <div class="container">
+            <p class="text-muted">© 夢的探討 ©</p>
+        </div>
+    </footer>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <script>
+        // Ensure footer stays at the bottom
+        function adjustFooterPosition() {
+            const footer = document.querySelector('.footer');
+            const bodyHeight = document.body.clientHeight;
+            const windowHeight = window.innerHeight;
+            if (bodyHeight < windowHeight) {
+                footer.style.position = 'fixed';
+                footer.style.bottom = '0';
+                footer.style.width = '100%';
+            } else {
+                footer.style.position = 'static';
+            }
+        }
+
+        window.addEventListener('load', adjustFooterPosition);
+        window.addEventListener('resize', adjustFooterPosition);
+    </script>
+</body>
+
+</html>
